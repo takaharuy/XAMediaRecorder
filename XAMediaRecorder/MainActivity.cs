@@ -1,10 +1,11 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Views;
 
 namespace XAMediaRecorder
 {
-    [Activity(Label = "XAMediaRecorder", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", MainLauncher = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape)]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -12,8 +13,13 @@ namespace XAMediaRecorder
             base.OnCreate(savedInstanceState);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.sample_main);
+        }
+
+        [Java.Interop.Export("onCaptureClick")]
+        public void OnCaptureClick(View view)
+        {
+
         }
     }
 }
-
