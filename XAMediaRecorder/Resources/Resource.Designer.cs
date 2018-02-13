@@ -26,6 +26,8 @@ namespace XAMediaRecorder
 		
 		public static void UpdateIdValues()
 		{
+			global::Microsoft.AppCenter.Push.Android.Resource.Drawable.ic_stat_notify_dot = global::XAMediaRecorder.Resource.Drawable.ic_stat_notify_dot;
+			global::Microsoft.AppCenter.Push.Android.Resource.String.library_name = global::XAMediaRecorder.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -88,7 +90,10 @@ namespace XAMediaRecorder
 			public const int ic_launcher = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int tile = 2130837505;
+			public const int ic_stat_notify_dot = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int tile = 2130837506;
 			
 			static Drawable()
 			{
@@ -138,14 +143,17 @@ namespace XAMediaRecorder
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int app_name = 2130968576;
+			// aapt resource value: 0x7f040001
+			public const int app_name = 2130968577;
+			
+			// aapt resource value: 0x7f040003
+			public const int btnCapture = 2130968579;
 			
 			// aapt resource value: 0x7f040002
-			public const int btnCapture = 2130968578;
+			public const int intro_message = 2130968578;
 			
-			// aapt resource value: 0x7f040001
-			public const int intro_message = 2130968577;
+			// aapt resource value: 0x7f040000
+			public const int library_name = 2130968576;
 			
 			static String()
 			{
