@@ -13,6 +13,10 @@ using Android.Views;
 using Android.Media;
 using Android.Util;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+
 using String = System.String;
 
 namespace XAMediaRecorder
@@ -31,6 +35,8 @@ namespace XAMediaRecorder
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            AppCenter.Start("f6488a76-44b6-4371-bbb8-c35e1ac16909", typeof(Analytics), typeof(Crashes));
+
             base.OnCreate(savedInstanceState);
 
             // Set our view from the "main" layout resource
